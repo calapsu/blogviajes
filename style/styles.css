@@ -16,6 +16,23 @@ p {
   font-size: 16px;
   line-height: 2;
 }
+/* botones */
+.button {
+  background-color: #00b8e4;
+  padding: 10px 60px;
+  display: inline-block;
+  margin-top: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out;
+}
+.button:hover {
+  background-color: rgb(0, 131, 164);
+}
+/* /botones */
 .site-header {
   padding: 20px 0;
 }
@@ -33,6 +50,7 @@ p {
 
 .bar {
   background-color: #db008d;
+  margin-top: 40px;
 }
 
 .main-navigation a {
@@ -55,6 +73,9 @@ p {
 /* /navegacion */
 
 /* Contenedores Principal */
+.main-content {
+  margin-top: 40px;
+}
 .main-content,
 .sidebar {
   padding: 20px;
@@ -63,13 +84,14 @@ p {
   .main-content {
     width: 70%;
     float: left;
-    padding-right: 0 60 0 0px;
+    padding-right: 0 60px 0 0;
   }
 
   .sidebar {
     width: 30%;
     float: right;
     padding: 0;
+    margin-top: 40px;
   }
 }
 /* /contendores principales */
@@ -80,7 +102,10 @@ h2 {
   margin-bottom: 20px;
 }
 .entry {
-  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.entry:last-of-type {
+  margin-bottom: 0;
 }
 
 .entry img {
@@ -93,4 +118,72 @@ h2 {
     margin: 0 30px 30px 0;
   }
 }
+
+.entry p {
+  text-align: justify;
+}
 /* /Entradas de Blog */
+
+/* sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 10px;
+}
+.sidebar ul li:hover {
+  background-color: #00b8e4;
+}
+.sidebar ul li a {
+  color: #00b8e4;
+  font-size: 18px;
+  text-decoration: none;
+}
+.sidebar ul li:hover a {
+  color: #ffffff;
+}
+/* /sidebar */
+
+/* footer */
+.footer-site {
+  background-color: #db008d;
+  padding-top: 40px;
+  margin-top: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.footer-site h2 {
+  color: #ffffff;
+}
+.footer-site a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.footer-site a:last-of-type {
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .footer-site .us {
+    float: left;
+    width: 30%;
+    text-align: left;
+  }
+  .footer-site .menu {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+}
+
+.copyright {
+  background-color: #c0007dfd;
+  margin: 50px 0 0 0;
+  padding: 20px 0;
+}
+
+/* /footer */

@@ -1,0 +1,36 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.site-header {
+  padding: 20px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* navegacion */
+
+.bar {
+  background-color: #db008d;
+}
+
+.main-navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main-navigation a {
+    display: inline-block;
+  }
+}
+.main-navigation a:hover {
+  background-color: #00b8e4;
+}

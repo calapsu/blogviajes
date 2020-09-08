@@ -46,6 +46,36 @@ p {
   display: block;
 }
 
+/* navegación Responsi */
+.bar {
+  overflow: hidden;
+}
+.mobile-menu {
+  color: #ffffff;
+  font-size: 2rem;
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+}
+#nav:target {
+  max-height: 800px;
+}
+.main-navigation {
+  max-height: 0;
+  transition: 0.5s;
+}
+@media (min-width: 768px) {
+  .main-navigation {
+    max-height: unset;
+  }
+  .mobile-menu,
+  .closse {
+    display: none !important;
+  }
+}
+
+/* /navegación Responsi */
+
 /* navegacion */
 
 .bar {
